@@ -1,13 +1,175 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation of Experiment - 6</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 40px;
+            color: #1e293b;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header-bar {
+            width: 4px;
+            height: 32px;
+            background-color: #0f172a;
+            margin-right: 16px;
+            border-radius: 2px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin: 0;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .subtitle {
+            display: flex;
+            align-items: center;
+            color: #475569;
+            font-size: 15px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+        }
+
+        .subtitle-icon {
+            margin-right: 8px;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-left: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            width: 320px;
+            padding: 40px 24px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .icon-container {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 32px;
+            box-shadow: inset 0 2px 4px rgba(255,255,255,0.8);
+        }
+
+        .card h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+            color: #0f172a;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #64748b;
+            line-height: 1.5;
+            margin: 0 0 24px 0;
+            flex-grow: 1;
+        }
+
+        .simulate-btn {
+            background-color: #f1f5f9;
+            color: #3b82f6;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            transition: background-color 0.2s ease;
+        }
+
+        .card:hover .simulate-btn {
+            background-color: #e0e7ff;
+        }
+
+        .simulate-btn::before {
+            content: '▶';
+            margin-right: 6px;
+            font-size: 10px;
+        }
+
+        .footer-note {
+            margin-top: 60px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
-		<!-- Your code goes here-->
+    <div class="header">
+        <div class="header-bar"></div>
+        <h1>Simulation of Experiment - 6</h1>
+    </div>
+    
+    <div class="subtitle">
+        <span class="subtitle-icon">🔬</span>
+        Interactive electrical machine simulations — click any card to launch the simulator
+    </div>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+    <div class="cards-container">
+        <a href="incipient.html" class="card">
+            <div class="icon-container">
+                ⚡
+            </div>
+            <h2>Incipient Fault</h2>
+            <p>Simulation of Buchholz Relay for incipient faults (gas accumulation).</p>
+            <div class="simulate-btn">SIMULATE</div>
+        </a>
+
+        <a href="severe.html" class="card">
+            <div class="icon-container">
+                💥
+            </div>
+            <h2>Severe Fault</h2>
+            <p>Simulation of Buchholz Relay for severe faults (oil surge).</p>
+            <div class="simulate-btn">SIMULATE</div>
+        </a>
+    </div>
+
+    <div class="footer-note">
+        🧪 Select any simulation module above — each opens an interactive environment for detailed study.
+    </div>
 </body>
 </html>
