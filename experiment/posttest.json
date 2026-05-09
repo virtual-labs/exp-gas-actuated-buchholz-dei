@@ -1,39 +1,96 @@
 {
   "version": 2.0,
+  "quiz_title": "QUIZ - Buchholz Relay",
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "num": 6,
+      "question": "How do we test Buchholz relay during maintenance",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Generate air bubbles with pump and force it to Buchholz relay",
+        "b": "Reduce oil level in Buchholz relay",
+        "c": "Both (a) & (b)",
+        "d": "None of these"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Partial. Air bubbles test the gas accumulation function.",
+        "b": "Partial. Reducing oil level tests the float and alarm function.",
+        "c": "Correct. Both methods are used to test the Buchholz relay during maintenance - air injection for gas detection and oil drain for low oil level.",
+        "d": "Incorrect."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
+    },
+    {
+      "num": 7,
+      "question": "Buchholz relay is used to protect from",
+      "answers": {
+        "a": "All internal faults of transformer",
+        "b": "All external faults of transformer",
+        "c": "Both (a) and (b)",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "Correct. Buchholz relay detects internal faults like winding short circuits, core faults, and insulation breakdown.",
+        "b": "Incorrect. External faults are not detected by Buchholz relay.",
+        "c": "Incorrect.",
+        "d": "Incorrect."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "num": 8,
+      "question": "Buchholz relay protects a transformer from",
+      "answers": {
+        "a": "Winding to ground fault",
+        "b": "Winding to winding fault",
+        "c": "Turn to turn fault",
+        "d": "All of these"
+      },
+      "explanations": {
+        "a": "Partial. Winding to ground fault produces gas.",
+        "b": "Partial. Winding to winding fault produces gas.",
+        "c": "Partial. Turn to turn fault produces gas.",
+        "d": "Correct. Buchholz relay detects all types of internal faults that produce gas or oil flow, including winding to ground, winding to winding, and turn to turn faults."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "num": 9,
+      "question": "Minimum operating time of Buchholz relay is",
+      "answers": {
+        "a": "0.1 Second",
+        "b": "1 Second",
+        "c": "2 Second",
+        "d": "0.5 Second"
+      },
+      "explanations": {
+        "a": "Correct. The minimum operating time of Buchholz relay is about 0.1 second (100 milliseconds).",
+        "b": "Incorrect. That is too high for minimum.",
+        "c": "Incorrect.",
+        "d": "Incorrect."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "num": 10,
+      "question": "Average operating time of Buchholz relay is",
+      "answers": {
+        "a": "1 Second",
+        "b": "0.2 Second",
+        "c": "0.1 Second",
+        "d": "5 Second"
+      },
+      "explanations": {
+        "a": "Incorrect. That is higher than average.",
+        "b": "Correct. The average operating time of Buchholz relay is approximately 0.2 seconds (200 milliseconds).",
+        "c": "Incorrect. That is the minimum time, not average.",
+        "d": "Incorrect."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }
