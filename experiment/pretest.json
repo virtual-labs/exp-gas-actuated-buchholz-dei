@@ -1,10 +1,10 @@
 {
   "version": 2.0,
-  "quiz_title": "QUIZ - Buchholz Relay",
+  
   "questions": [
     {
-      "num": 1,
-      "question": "Buchholz relay is used in-",
+     
+      "question": "1. Buchholz relay is used in-",
       "answers": {
         "a": "Oil cooled Transformer",
         "b": "Air cooled Transformer",
@@ -21,8 +21,8 @@
       "difficulty": "beginner"
     },
     {
-      "num": 2,
-      "question": "Buchholz relay operates on the principle of-",
+     
+      "question": "2. Buchholz relay operates on the principle of-",
       "answers": {
         "a": "over current",
         "b": "over voltage",
@@ -39,8 +39,7 @@
       "difficulty": "beginner"
     },
     {
-      "num": 3,
-      "question": "Buchholz relay is installed-",
+      "question": "3. Buchholz relay is installed-",
       "answers": {
         "a": "Between of transformer tank and conservator",
         "b": "in the Conservator",
@@ -57,8 +56,8 @@
       "difficulty": "beginner"
     },
     {
-      "num": 4,
-      "question": "Buchholz relay is used for protection of transformer from",
+     
+      "question": "4. Buchholz relay is used for protection of transformer from",
       "answers": {
         "a": "The flow of excessively high current",
         "b": "Low level of oil in main tank",
@@ -75,8 +74,8 @@
       "difficulty": "intermediate"
     },
     {
-      "num": 5,
-      "question": "Buchholz relay is-",
+    
+      "question": "5. Buchholz relay is-",
       "answers": {
         "a": "Safety device",
         "b": "Control device",
