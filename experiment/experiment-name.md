@@ -1,1 +1,1 @@
-## To Study the gas actuated Buchholz relay for oil filled transformer.
+## Study of Gas Actuated Buchholz Relay for Oil Filled Transformer
