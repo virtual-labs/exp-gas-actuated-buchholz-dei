@@ -1,4 +1,4 @@
-# Experiment 6 - Theory and Procedure
+
 
 ## THEORY
 
