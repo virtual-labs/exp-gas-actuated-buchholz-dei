@@ -47,7 +47,7 @@
 <!-- end #menu -->
 <br/><br/><br/>
 <div style="text-align: center;">
-    <b style="font-size:18px">Experiment 6. To Study the gas actuated Buchholz relay for oil filled transformer.<br/>Video-1</b><br/><br/>
+    <b style="font-size:18px">. To Study the gas actuated Buchholz relay for oil filled transformer.<br/>Video-2</b><br/><br/>
     <video width="480" height="360" controls>
         <source src=" videos/Exp6.mp4" type="video/mp4">
     </video>
