@@ -15,7 +15,7 @@ The Buchholz relay comprises hinged float and mercury switch assembly for both t
 </div>
 
 
-<h1>Equipments Required in Experiment - 6</h1>
+<h2>Equipments Required  </h2>
 
 <table align="center" border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-left: auto; margin-right: auto;">
     <tr>
