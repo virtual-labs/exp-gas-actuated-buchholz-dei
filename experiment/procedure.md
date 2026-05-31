@@ -31,7 +31,9 @@
 
 11. After completion of experiment open all the Valves including hand Valve except V4 and V5 to release the air pressure inside all the tanks.
 
-# Block Diagram of Experiment - 6
+12. After completion of experiment open all the Valves including hand Valve except V₄ and V₅ to release the air pressure inside all the tanks.
+
+## Block Diagram 
 
 <center>
 
@@ -41,4 +43,14 @@
 
 </center>
 
-12. After completion of experiment open all the Valves including hand Valve except V₄ and V₅ to release the air pressure inside all the tanks.
+## Video for experiment:
+<!-- end #menu -->
+<br/><br/><br/>
+<div style="text-align: center;">
+    <b style="font-size:18px">Experiment 6. To Study the gas actuated Buchholz relay for oil filled transformer.<br/>Video-1</b><br/><br/>
+    <video width="480" height="360" controls>
+        <source src=" videos/Exp6.mp4" type="video/mp4">
+    </video>
+</div>
+
+
