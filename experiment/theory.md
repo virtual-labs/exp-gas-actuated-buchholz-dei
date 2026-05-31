@@ -1,5 +1,3 @@
-
-
 ## Theory
 
 The Buchholz relay is one of the important protective devices for oil immersed power transformer, which will operate based on the oil or gas pressure. It detects two types of faults i.e. minor and major fault. Minor faults comprise of faults in core laminations, over heating in windings, bad connections, low oil levels etc. In minor faults the alarm circuit will be actuated to switch on the buzzer. In case of major faults like internal short circuit between phase and earth, phase to phase fault, insulation break down etc., the trip circuit will be closed due to enormous amount of gas bubbles.
@@ -15,22 +13,16 @@ The Buchholz relay comprises hinged float and mercury switch assembly for both t
 </div>
 
 
-<h2>Equipments Required  </h2>
+## Equipments Required
 
-<table align="center" border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-left: auto; margin-right: auto;">
-    <tr>
-        <th>Equipment</th>
-        <th>Image</th>
-    </tr>
-    <tr>
-        <td><strong>Fig.1: Buchholz Relay Setup</strong></td>
-        <td align="center"><img src="images/exp6/BRSetup.JPG" alt="Buchholz Relay Setup" style="max-width: 200px;"></td>
-    </tr>
-    <tr>
-        <td><strong>Fig.2: 100W Lamp</strong></td>
-        <td align="center"><img src="images/exp6/BR%20load.JPG" alt="100W Lamp" style="max-width: 200px;"></td>
-    </tr>
-</table>
+<div align="center">
+
+| Equipment | Image |
+| :--- | :--- |
+| **Fig.1: Buchholz Relay Setup** | <img src="images/exp6/BRSetup.JPG" alt="Buchholz Relay Setup" width="200"> |
+| **Fig.2: 100W Lamp** | <img src="images/exp6/BR%20load.JPG" alt="100W Lamp" width="200"> |
+
+</div>
 
 <!-- end #menu -->
 
