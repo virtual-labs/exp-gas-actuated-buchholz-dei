@@ -1,9 +1,7 @@
 {
   "version": 2.0,
-  
   "questions": [
     {
-     
       "question": "1. Buchholz relay is used in-",
       "answers": {
         "a": "Oil cooled Transformer",
@@ -17,11 +15,9 @@
         "c": "Incorrect. Transmission lines use different protection schemes.",
         "d": "Incorrect. Generators use differential protection, not Buchholz relay."
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "a"
     },
     {
-     
       "question": "2. Buchholz relay operates on the principle of-",
       "answers": {
         "a": "over current",
@@ -35,8 +31,7 @@
         "c": "Correct. Buchholz relay operates when gas accumulates due to decomposition of oil during internal faults.",
         "d": "Incorrect."
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "c"
     },
     {
       "question": "3. Buchholz relay is installed-",
@@ -52,11 +47,9 @@
         "c": "Incorrect. It is not inside the main tank.",
         "d": "Incorrect."
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "a"
     },
     {
-     
       "question": "4. Buchholz relay is used for protection of transformer from",
       "answers": {
         "a": "The flow of excessively high current",
@@ -70,11 +63,9 @@
         "c": "Incorrect because (a) is not correct.",
         "d": "Incorrect."
       },
-      "correctAnswer": "b",
-      "difficulty": "intermediate"
+      "correctAnswer": "b"
     },
     {
-    
       "question": "5. Buchholz relay is-",
       "answers": {
         "a": "Safety device",
@@ -88,8 +79,7 @@
         "c": "Incorrect.",
         "d": "Incorrect. It is a mechanical relay with electrical contacts."
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "a"
     }
   ]
 }
