@@ -1,96 +1,85 @@
 {
   "version": 2.0,
- 
   "questions": [
     {
-     
-      "question": "1. How do we test Buchholz relay during maintenance",
+      "question": "1. Buchholz relay is used in-",
       "answers": {
-        "a": "Generate air bubbles with pump and force it to Buchholz relay",
-        "b": "Reduce oil level in Buchholz relay",
-        "c": "Both (a) & (b)",
-        "d": "None of these"
+        "a": "Oil cooled Transformer",
+        "b": "Air cooled Transformer",
+        "c": "Transmission Line",
+        "d": "Generator"
       },
       "explanations": {
-        "a": "Partial. Air bubbles test the gas accumulation function.",
-        "b": "Partial. Reducing oil level tests the float and alarm function.",
-        "c": "Correct. Both methods are used to test the Buchholz relay during maintenance - air injection for gas detection and oil drain for low oil level.",
-        "d": "Incorrect."
+        "a": "Correct. Buchholz relay is used only in oil cooled transformers (with conservator tank).",
+        "b": "Incorrect. Air cooled transformers (dry type) do not have oil, so Buchholz relay cannot be used.",
+        "c": "Incorrect. Transmission lines use different protection schemes.",
+        "d": "Incorrect. Generators use differential protection, not Buchholz relay."
       },
-      "correctAnswer": "c",
-      "difficulty": "intermediate"
+      "correctAnswer": "a"
     },
     {
-     
-      "question": "2. Buchholz relay is used to protect from",
+      "question": "2. Buchholz relay operates on the principle of-",
       "answers": {
-        "a": "All internal faults of transformer",
-        "b": "All external faults of transformer",
+        "a": "over current",
+        "b": "over voltage",
+        "c": "Gas",
+        "d": "Over power"
+      },
+      "explanations": {
+        "a": "Incorrect. Overcurrent is for other relays.",
+        "b": "Incorrect.",
+        "c": "Correct. Buchholz relay operates when gas accumulates due to decomposition of oil during internal faults.",
+        "d": "Incorrect."
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "3. Buchholz relay is installed-",
+      "answers": {
+        "a": "Between of transformer tank and conservator",
+        "b": "in the Conservator",
+        "c": "in the Main tank",
+        "d": "in the Reservoir"
+      },
+      "explanations": {
+        "a": "Correct. Buchholz relay is installed in the pipe connecting the main transformer tank to the conservator.",
+        "b": "Incorrect. It is not inside the conservator.",
+        "c": "Incorrect. It is not inside the main tank.",
+        "d": "Incorrect."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "question": "4. Buchholz relay is used for protection of transformer from",
+      "answers": {
+        "a": "The flow of excessively high current",
+        "b": "Low level of oil in main tank",
         "c": "Both (a) and (b)",
-        "d": "None of these"
+        "d": "Excessive high voltage"
       },
       "explanations": {
-        "a": "Correct. Buchholz relay detects internal faults like winding short circuits, core faults, and insulation breakdown.",
-        "b": "Incorrect. External faults are not detected by Buchholz relay.",
+        "a": "Incorrect. High current is handled by overcurrent relays.",
+        "b": "Correct. Buchholz relay detects low oil level and gas accumulation.",
+        "c": "Incorrect because (a) is not correct.",
+        "d": "Incorrect."
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "5. Buchholz relay is-",
+      "answers": {
+        "a": "Safety device",
+        "b": "Control device",
+        "c": "Generating device",
+        "d": "Electrical instrument"
+      },
+      "explanations": {
+        "a": "Correct. Buchholz relay is a protective safety device that trips the circuit breaker during internal faults.",
+        "b": "Incorrect. It is not a control device.",
         "c": "Incorrect.",
-        "d": "Incorrect."
+        "d": "Incorrect. It is a mechanical relay with electrical contacts."
       },
-      "correctAnswer": "a",
-      "difficulty": "intermediate"
-    },
-    {
-   
-      "question": "3. Buchholz relay protects a transformer from",
-      "answers": {
-        "a": "Winding to ground fault",
-        "b": "Winding to winding fault",
-        "c": "Turn to turn fault",
-        "d": "All of these"
-      },
-      "explanations": {
-        "a": "Partial. Winding to ground fault produces gas.",
-        "b": "Partial. Winding to winding fault produces gas.",
-        "c": "Partial. Turn to turn fault produces gas.",
-        "d": "Correct. Buchholz relay detects all types of internal faults that produce gas or oil flow, including winding to ground, winding to winding, and turn to turn faults."
-      },
-      "correctAnswer": "d",
-      "difficulty": "intermediate"
-    },
-    {
-    
-      "question": "4. Minimum operating time of Buchholz relay is",
-      "answers": {
-        "a": "0.1 Second",
-        "b": "1 Second",
-        "c": "2 Second",
-        "d": "0.5 Second"
-      },
-      "explanations": {
-        "a": "Correct. The minimum operating time of Buchholz relay is about 0.1 second (100 milliseconds).",
-        "b": "Incorrect. That is too high for minimum.",
-        "c": "Incorrect.",
-        "d": "Incorrect."
-      },
-      "correctAnswer": "a",
-      "difficulty": "advanced"
-    },
-    {
-     
-      "question": "5. Average operating time of Buchholz relay is",
-      "answers": {
-        "a": "1 Second",
-        "b": "0.2 Second",
-        "c": "0.1 Second",
-        "d": "5 Second"
-      },
-      "explanations": {
-        "a": "Incorrect. That is higher than average.",
-        "b": "Correct. The average operating time of Buchholz relay is approximately 0.2 seconds (200 milliseconds).",
-        "c": "Incorrect. That is the minimum time, not average.",
-        "d": "Incorrect."
-      },
-      "correctAnswer": "b",
-      "difficulty": "advanced"
+      "correctAnswer": "a"
     }
   ]
 }
