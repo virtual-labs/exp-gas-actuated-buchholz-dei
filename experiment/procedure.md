@@ -1,4 +1,4 @@
-## PROCEDURAL STEPS
+## Procedure
 
 **Valve Designations:**
 - Valve V₁ - Buchholz Relay to transformer tank
