@@ -4,7 +4,7 @@
   "questions": [
     {
      
-      "question": "6. How do we test Buchholz relay during maintenance",
+      "question": "1. How do we test Buchholz relay during maintenance",
       "answers": {
         "a": "Generate air bubbles with pump and force it to Buchholz relay",
         "b": "Reduce oil level in Buchholz relay",
@@ -22,7 +22,7 @@
     },
     {
      
-      "question": "7. Buchholz relay is used to protect from",
+      "question": "2. Buchholz relay is used to protect from",
       "answers": {
         "a": "All internal faults of transformer",
         "b": "All external faults of transformer",
@@ -40,7 +40,7 @@
     },
     {
    
-      "question": "8. Buchholz relay protects a transformer from",
+      "question": "3. Buchholz relay protects a transformer from",
       "answers": {
         "a": "Winding to ground fault",
         "b": "Winding to winding fault",
@@ -58,7 +58,7 @@
     },
     {
     
-      "question": "9. Minimum operating time of Buchholz relay is",
+      "question": "4. Minimum operating time of Buchholz relay is",
       "answers": {
         "a": "0.1 Second",
         "b": "1 Second",
@@ -76,7 +76,7 @@
     },
     {
      
-      "question": "10. Average operating time of Buchholz relay is",
+      "question": "5. Average operating time of Buchholz relay is",
       "answers": {
         "a": "1 Second",
         "b": "0.2 Second",
