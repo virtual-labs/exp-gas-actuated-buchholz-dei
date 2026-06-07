@@ -16,12 +16,12 @@ The Buchholz relay comprises hinged float and mercury switch assembly for both t
 ## Equipments Required
 
 <div align="center">
-
+<center>
 | Equipment | Image |
 | :--- | :--- |
 | **Fig.1: Buchholz Relay Setup** | <img src="images/exp6/BRSetup.JPG" alt="Buchholz Relay Setup" width="200"> |
 | **Fig.2: 100W Lamp** | <img src="images/exp6/BR%20load.JPG" alt="100W Lamp" width="200"> |
-
+</center>
 </div>
 
 <!-- end #menu -->
