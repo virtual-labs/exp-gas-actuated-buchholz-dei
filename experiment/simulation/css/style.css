@@ -1,0 +1,299 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 900px;
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.procedure {
+    font-size: 16px;
+    color: #ef4444; /* Red color from image */
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.procedure u {
+    color: #0f172a;
+    font-size: 18px;
+    text-decoration-thickness: 2px;
+}
+
+.container {
+    width: 900px;
+    height: 650px;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.svg-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.pipe {
+    fill: none;
+    stroke: #cbd5e1;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.wire {
+    fill: none;
+    stroke: #ef4444;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* UI Elements */
+.element {
+    position: absolute;
+    z-index: 10;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.tank {
+    border: 3px solid #1e3a8a; /* Dark blue */
+    color: #dc2626; /* Red text */
+}
+
+.buchholz-relay {
+    border: 3px solid #16a34a; /* Green */
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+    background: white;
+    box-sizing: border-box;
+}
+
+.relay-core {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid #ccc;
+    background: #e2e8f0; /* Empty color (gas) */
+    overflow: hidden;
+}
+
+.relay-oil {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2563eb; /* Blue oil */
+    transition: height 0.3s linear;
+}
+
+.relay-scale {
+    position: absolute;
+    right: -45px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #000;
+    font-weight: normal;
+}
+
+.valve {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.valve:hover {
+    background: #f1f5f9;
+}
+
+.valve-inner {
+    width: 24px;
+    height: 24px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+}
+
+.valve-line {
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    background: #000;
+    top: 10px;
+    left: -4px;
+    transition: transform 0.3s ease;
+}
+
+.valve.closed .valve-line {
+    transform: rotate(90deg);
+}
+
+.valve-label {
+    position: absolute;
+    top: -20px;
+    color: #dc2626;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.indicator-box {
+    border: 3px solid #1e3a8a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #dc2626;
+}
+
+.light {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    background-color: #e2e8f0;
+    border: 2px solid #cbd5e1;
+    transition: background-color 0.3s;
+}
+
+.light.alarm-on {
+    background-color: #facc15; /* Yellow */
+    box-shadow: 0 0 15px #facc15;
+    animation: blinkYellow 1s infinite;
+}
+
+.light.trip-on {
+    background-color: #ef4444; /* Red */
+    box-shadow: 0 0 15px #ef4444;
+    animation: blinkRed 1s infinite;
+}
+
+@keyframes blinkYellow {
+    0%, 100% { background-color: #facc15; box-shadow: 0 0 15px #facc15; }
+    50% { background-color: #fef08a; box-shadow: 0 0 5px #fef08a; }
+}
+
+@keyframes blinkRed {
+    0%, 100% { background-color: #ef4444; box-shadow: 0 0 15px #ef4444; }
+    50% { background-color: #fca5a5; box-shadow: 0 0 5px #fca5a5; }
+}
+
+.pump-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #dc2626;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.pump-container:active {
+    transform: scale(0.95);
+}
+
+.pump-icon {
+    width: 60px;
+    height: 40px;
+    background: #fff;
+    border: 3px solid #1e3a8a;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.pump-icon::after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    width: 15px;
+    height: 4px;
+    background: #1e3a8a;
+}
+
+.status-panel {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 20;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.status-text {
+    font-weight: bold;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.refresh-btn {
+    padding: 6px 12px;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.2s;
+}
+
+.refresh-btn:hover {
+    background: #e2e8f0;
+}
+
+.nav-back {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.nav-back:hover {
+    background: #2563eb;
+}
