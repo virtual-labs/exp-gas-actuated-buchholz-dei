@@ -1,0 +1,11 @@
+
+/home/runner/work/exp-gas-actuated-buchholz-dei/exp-gas-actuated-buchholz-dei/experiment/simulation/js/incipient.js
+  18:10  warning  'toggleValve' is defined but never used  no-unused-vars
+  70:10  warning  'resetAll' is defined but never used     no-unused-vars
+
+/home/runner/work/exp-gas-actuated-buchholz-dei/exp-gas-actuated-buchholz-dei/experiment/simulation/js/severe.js
+  19:10  warning  'toggleValve' is defined but never used  no-unused-vars
+  72:10  warning  'resetAll' is defined but never used     no-unused-vars
+
+✖ 4 problems (0 errors, 4 warnings)
+

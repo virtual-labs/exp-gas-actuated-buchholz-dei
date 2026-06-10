@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Incipient Fault Simulation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="nav-back">Back to Menu</a>
+        <div class="procedure">
+            <u>Procedure</u><br>
+           1. Close valve V<sub>2</sub><br>
+            2. Open  valve V<sub>3</sub><br>
+            3. Observe air injection from Pump (Starts Automatically)<br>
+            4. When Level > 100 c.cm, Alarm started
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- SVG Pipes -->
+        <svg class="svg-bg">
+            <!-- Pipes -->
+            <path class="pipe" d="M 300 120 L 350 120 L 350 280 L 400 280" />
+            <path class="pipe" d="M 480 280 L 550 280 L 550 370 L 630 370" />
+            <path class="pipe" d="M 690 420 L 690 520 L 330 520" />
+            <path class="pipe" d="M 180 520 L 100 520 L 100 120 L 180 120" />
+            <path class="pipe" d="M 450 580 L 255 580 L 255 560" />
+            
+            <!-- Electrical Wires -->
+            <path class="wire" d="M 300 310 L 400 310" />
+            <path class="wire" d="M 300 330 L 400 330" />
+        </svg>
+
+        <!-- Status Panel -->
+        <div class="status-panel">
+            <div class="status-text">Gas Volume (Oil Drained): <span id="oilLevel">0</span> c.cm</div>
+            <button class="refresh-btn" onclick="resetAll()">Refresh Everything</button>
+        </div>
+
+        <!-- Tanks -->
+        <div class="element tank" style="left: 180px; top: 80px; width: 120px; height: 80px;">Conservator</div>
+        <div class="element tank" style="left: 630px; top: 320px; width: 120px; height: 100px;">Transformer<br>Tank</div>
+        <div class="element tank" style="left: 180px; top: 480px; width: 150px; height: 80px;">Reservoir</div>
+
+        <!-- Alarm -->
+        <div class="element indicator-box" style="left: 180px; top: 280px; width: 120px; height: 100px;">
+            <div class="light" id="alarm"></div>
+            Alarm
+        </div>
+
+        <!-- Buchholz Relay -->
+        <div class="element buchholz-relay" style="left: 400px; top: 220px; width: 80px; height: 120px;">
+            <div class="relay-core">
+                <div class="relay-oil" id="relayFill" style="height: 100%;"></div>
+            </div>
+            <div style="font-size: 11px; margin-top: 2px; color: #dc2626;">Buchholz<br>Relay</div>
+            <div class="relay-scale">
+                <span>0</span>
+                <span>100</span>
+                <span>200</span>
+                <span>300</span>
+                <span>400</span>
+                <span>500</span>
+            </div>
+        </div>
+
+        <!-- Valves -->
+        <div class="element valve" id="valve1" style="left: 330px; top: 180px;" onclick="toggleValve(this)">
+            <div class="valve-label">V1</div>
+            <div class="valve-inner"><div class="valve-line"></div></div>
+        </div>
+        <div class="element valve" id="valve2" style="left: 530px; top: 305px;" onclick="toggleValve(this)">
+            <div class="valve-label">V2</div>
+            <div class="valve-inner"><div class="valve-line"></div></div>
+        </div>
+        <div class="element valve" id="valve3" style="left: 560px; top: 500px;" onclick="toggleValve(this)">
+            <div class="valve-label">V3</div>
+            <div class="valve-inner"><div class="valve-line"></div></div>
+        </div>
+
+        <!-- Pump -->
+        <div class="element pump-container" id="pump" style="left: 450px; top: 560px;" onclick="startPump()">
+            <div class="pump-icon"></div>
+            <div>Pump</div>
+        </div>
+    </div>
+
+    <script src="js/incipient.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Buchholz relay is used in-",
+      "answers": {
+        "a": "Oil cooled Transformer",
+        "b": "Air cooled Transformer",
+        "c": "Transmission Line",
+        "d": "Generator"
+      },
+      "explanations": {
+        "a": "Correct. Buchholz relay is used only in oil cooled transformers (with conservator tank).",
+        "b": "Incorrect. Air cooled transformers (dry type) do not have oil, so Buchholz relay cannot be used.",
+        "c": "Incorrect. Transmission lines use different protection schemes.",
+        "d": "Incorrect. Generators use differential protection, not Buchholz relay."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "question": "2. Buchholz relay operates on the principle of-",
+      "answers": {
+        "a": "over current",
+        "b": "over voltage",
+        "c": "Gas",
+        "d": "Over power"
+      },
+      "explanations": {
+        "a": "Incorrect. Overcurrent is for other relays.",
+        "b": "Incorrect.",
+        "c": "Correct. Buchholz relay operates when gas accumulates due to decomposition of oil during internal faults.",
+        "d": "Incorrect."
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "3. Buchholz relay is installed-",
+      "answers": {
+        "a": "Between of transformer tank and conservator",
+        "b": "in the Conservator",
+        "c": "in the Main tank",
+        "d": "in the Reservoir"
+      },
+      "explanations": {
+        "a": "Correct. Buchholz relay is installed in the pipe connecting the main transformer tank to the conservator.",
+        "b": "Incorrect. It is not inside the conservator.",
+        "c": "Incorrect. It is not inside the main tank.",
+        "d": "Incorrect."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "question": "4. Buchholz relay is used for protection of transformer from",
+      "answers": {
+        "a": "The flow of excessively high current",
+        "b": "Low level of oil in main tank",
+        "c": "Both (a) and (b)",
+        "d": "Excessive high voltage"
+      },
+      "explanations": {
+        "a": "Incorrect. High current is handled by overcurrent relays.",
+        "b": "Correct. Buchholz relay detects low oil level and gas accumulation.",
+        "c": "Incorrect because (a) is not correct.",
+        "d": "Incorrect."
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "5. Buchholz relay is-",
+      "answers": {
+        "a": "Safety device",
+        "b": "Control device",
+        "c": "Generating device",
+        "d": "Electrical instrument"
+      },
+      "explanations": {
+        "a": "Correct. Buchholz relay is a protective safety device that trips the circuit breaker during internal faults.",
+        "b": "Incorrect. It is not a control device.",
+        "c": "Incorrect.",
+        "d": "Incorrect. It is a mechanical relay with electrical contacts."
+      },
+      "correctAnswer": "a"
+    }
+  ]
+}
